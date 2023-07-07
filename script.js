@@ -1,5 +1,11 @@
+var crsr = document.querySelector('#cursor')
+var crsr_blr = document.querySelector('#cursor-blur')
 document.addEventListener('mousemove', function (dets) {
-    console.log(dets)
+    crsr.style.left = dets.x - 10 + 'px';
+    crsr.style.top = dets.y - 10 + 'px';
+    crsr_blr.style.left = dets.x - 250 + 'px'
+    crsr_blr.style.top = dets.y - 250 + 'px'
+
 })
 
 gsap.to('#nav', {
@@ -21,7 +27,7 @@ gsap.to('#main', {
     scrollTrigger: {
         trigger: '#main',
         scroller: 'body',
-        markers: true,
+        // markers: true,
         start: 'top -20%',
         end: 'top -70%',
         scrub: 1
