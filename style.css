@@ -11,6 +11,7 @@ html, body {
     width: 100%;
     perspective: 800px;
     cursor: default;
+    overflow-x: hidden;
 }
 
 *::selection {
@@ -49,7 +50,7 @@ html, body {
     z-index: 99;
 }
 #nav img {
-    height: 80px;
+    height: 4.5vw;
 }
 
 #nav h4 {
@@ -138,7 +139,7 @@ video {
     font-family: sans-serif;
     font-weight: 900;
     margin-right: 20px;
-    color: transparent;
+    color: #000;
     transition: all linear 0.5s;
     -webkit-text-stroke: 1px #fff;
 }
@@ -190,7 +191,7 @@ video {
 #cards-container {
   /* background-color: red; */
   height: 100vh;
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -244,7 +245,7 @@ video {
   opacity: 1;
 }
 .card:hover {
-  transform: rotate3d(1, 1, 0, 20deg);
+  transform: rotate3d(-1, 1, 0, 20deg);
 }
 
 #green-div {
